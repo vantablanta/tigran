@@ -19,7 +19,7 @@ export function Footer() {
 					className="relative rounded-2xl md:block hidden"
 				/>
 
-				<div className="absolute !w-full 2xl:top-20 -top-2 xxl:px-16 px-4 rounded-2xl  bg-white md:bg-transparent">
+				<div className="absolute !w-full 2xl:top-14 -top-2 xxl:px-16 px-4 rounded-2xl  bg-white md:bg-transparent">
 					<div className="flex 2xl:flex-row flex-col items-center 2xl:gap-6 xxl:gap-4 gap-2">
 						<div className="md:w-1/2 w-full hidden md:block">
 							<Search
@@ -51,10 +51,14 @@ export function Footer() {
 						</div>
 					</div>
 
-					<div className="flex 2xl:flex-row h-full  flex-col my-4 2xl:my-6 items-center font-medium px-4">
-						<div className="w-2/5">
-							<Image src={logo} alt="logo" className="my-4 2xl:my-8 xxl:my-6" />
-							<div className="flex items-center gap-3 text-brand-primary my-4 2xl:my-8 xxl:my-6">
+					<div className="flex 2xl:flex-row h-full  flex-col my-4 2xl:my-6 items-center justify-center  font-medium px-4">
+						<div className="w-full md:w-2/5 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+							<Image
+								src={logo}
+								alt="logo"
+								className="my-2 2xl:my-8 xxl:my-4 object-contain md:object-left "
+							/>
+							<div className="flex items-center gap-3 text-brand-primary my-2 2xl:my-8 xxl:my-4">
 								<svg
 									width="20"
 									height="20"
@@ -69,50 +73,49 @@ export function Footer() {
 									/>
 								</svg>
 
-								<p className="text-sm xxl:text-base 2xl:text-lg ">
-									support@Jobwhee.com
+								<p className="text-xs xxl:text-base 2xl:text-lg ">
+									support@jobwhee.com
 								</p>
 							</div>
 
-							<div className="my-4 2xl:my-8 xxl:my-6">
-								<CountrySelect usePrimaryColor />
+							<div className="my-2 2xl:my-8 xxl:my-4">
+								<CountrySelect usePrimaryColor showOnMobile />
 							</div>
 						</div>
-						<div className="md:w-1/5 w-full  text-brand-primary text-center">
-							<p className=" my-4 2xl:my-6 xxl:my-8 font-medium text-sm xxl:text-base 2xl:text-lg ">
+						<div className="md:w-1/5 w-full  text-brand-primary text-center md:text-left">
+							<p className=" my-2 2xl:my-6 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								About Us
 							</p>
-							<p className=" my-4 2xl:my-8 xxl:my-6 font-medium text-sm xxl:text-base 2xl:text-lg ">
+							<p className=" my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								FAQ
 							</p>
-							<p className="my-4 2xl:my-8 xxl:my-6 font-medium text-sm xxl:text-base 2xl:text-lg ">
+							<p className="my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								Steps of Success
 							</p>
 						</div>
-
-						<div className="md:w-1/5 w-full text-brand-primary text-center">
-							<p className=" my-4 2xl:my-8 xxl:my-6 font-medium text-sm xxl:text-base 2xl:text-lg ">
+						<div className="md:w-1/5 w-full text-brand-primary text-center md:text-left">
+							<p className=" my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								Platform
 							</p>
-							<p className=" my-4 2xl:my-8 xxl:my-6 font-medium text-sm xxl:text-base 2xl:text-lg ">
+							<p className=" my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								Contracts
 							</p>
-							<p className=" my-4 2xl:my-8 xxl:my-6 font-medium text-sm xxl:text-base 2xl:text-lg ">
+							<p className=" my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg ">
 								Advantages
 							</p>
 						</div>
-						<div className="md:w-1/5 w-full text-brand-primary text-center">
-							<p className=" my-4 2xl:my-8 xxl:my-6 ont-medium text-sm xxl:text-base 2xl:text-lg">
+						<div className="md:w-1/5 w-full text-brand-primary text-center md:text-left">
+							<p className=" my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg">
 								Services
 							</p>
-							<p className="my-4 2xl:my-8 xxl:my-6 ont-medium text-sm xxl:text-base 2xl:text-lg">
+							<p className="my-2 2xl:my-8 xxl:my-4 font-medium text-xs xxl:text-base 2xl:text-lg">
 								Top Talents
 							</p>
 							<div className="">
 								<Image
 									src={socialIcons}
 									alt="socials"
-									className="h-6  my-4 2xl:my-8 xxl:my-6 ont-medium text-sm xxl:text-base 2xl:text-lg object-contain"
+									className="h-6 my-2 2xl:my-8 xxl:my-4 xxl:text-base 2xl:text-lg object-contain md:object-left"
 								/>
 							</div>
 						</div>
@@ -122,17 +125,21 @@ export function Footer() {
 
 					<div className="flex md:flex-row flex-col justify-between  items-center">
 						<div className="flex gap-2 items-center">
-							<p className="text-[#757575] font-medium text-sm">
+							<p className="text-[#757575] font-medium my-1 md:my-0 text-xs xxl:text-base">
 								© 2025 Jobwhee All rights reserved.
 							</p>
 						</div>
 
-						<div className="flex md:flex-row flex-col gap-6  items-center">
-							<p className="text-[#757575] font-medium text-sm">Terms of Use</p>
-							<p className="text-[#757575] font-medium text-sm">
+						<div className="flex md:flex-row flex-col md:gap-6 gap-2  items-center">
+							<p className="text-[#757575] font-medium text-xs xxl:text-base">
+								Terms of Use
+							</p>
+							<p className="text-[#757575] font-medium text-xs xxl:text-base">
 								Privacy Policy
 							</p>
-							<p className="text-[#757575] font-medium text-sm">Cookies</p>
+							<p className="text-[#757575] font-medium text-xs xxl:text-base">
+								Cookies
+							</p>
 						</div>
 					</div>
 				</div>

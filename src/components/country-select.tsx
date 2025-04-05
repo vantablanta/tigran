@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 export function CountrySelect({
 	usePrimaryColor,
-}: { usePrimaryColor: boolean }) {
+	showOnMobile,
+}: { usePrimaryColor: boolean; showOnMobile?: boolean }) {
 	const [showDropdown, setShowDropdown] = useState(false);
 	const dropdownRef = useRef<HTMLDivElement>(null);
 	const buttonRef = useRef<HTMLButtonElement>(null);
@@ -101,7 +102,7 @@ export function CountrySelect({
 			<button
 				ref={buttonRef}
 				id="dropdownHoverButton"
-				className={`border-[#94949480] hidden md:flex items-center border ${
+				className={`border-[#94949480] ${showOnMobile ? "flex" : "hidden"} md:flex items-center md:text-base text-xs border ${
 					usePrimaryColor ? "text-brand-primary" : "text-white"
 				} px-4 py-2 rounded-full`}
 				type="button"
