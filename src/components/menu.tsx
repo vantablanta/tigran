@@ -8,7 +8,7 @@ export function MenuBar() {
 	return (
 		<div className="rounded-full p-3 mb-4 bg-black  border">
 			<div className="flex justify-between  items-center">
-				<Image src={logo} alt="logo" width={100} height={100} />
+				<Image src={logo} alt="logo" className="w-[100px] md:w-[130px]" />
 				<div className="hidden md:block">
 					<ul className="flex gap-6">
 						<li>Post a Job</li>
